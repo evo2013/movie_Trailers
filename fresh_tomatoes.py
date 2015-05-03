@@ -88,7 +88,7 @@ main_page_content = '''
 <html lang="en">
   <body>
 
-    <!--Added jumbotron section to describe the page functionality -->
+    <!--Added jumbotron section to describe the page functionality & hightlight call-to-action -->
      <!-- Jumbotron -->
     <div class="container">
       <div class="row clearfix">
@@ -134,6 +134,7 @@ main_page_content = '''
     <div class="container">
       {movie_tiles}
     </div>
+    <!--Added footer with 'Non-Commercial Use' disclaimer -->
     <footer class = "text-center">
         <p>Favorite Movie Trailers Design &copy; 2015 | For Non-Commercial Use Only </p>
     </footer>
@@ -153,6 +154,10 @@ movie_tile_content = '''
 </div>
 '''
 
+'''
+Describe function "create_movie_tiles_content" which takes the array "movies", loops through it and
+returns the content of each movie in a tiled format. 
+'''
 def create_movie_tiles_content(movies):
     # The HTML content for this section of the page
     content = ''
@@ -170,6 +175,7 @@ def create_movie_tiles_content(movies):
             movie_storyline=movie.storyline
         )
     return content
+
 
 def open_movies_page(movies):
   # Create or overwrite the output file

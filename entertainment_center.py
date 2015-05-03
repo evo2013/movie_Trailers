@@ -1,6 +1,11 @@
 import media
 import fresh_tomatoes
 
+'''
+Define 6 different instances of the movie object with the following attributes:
+movie name, storyline, poster image and YouTube trailer URL. 
+'''
+
 hunger_games = media.Movie("The Hunger Games: Catching Fire", 
 			"In a dystopian future, each year two young representatives from 12 districts are selected by lottery to participate in The Hunger Games",
 			"http://webagencydesign.org/movie_img/hgames.jpg",
@@ -32,5 +37,9 @@ gandhi = media.Movie("Gandhi",
 	 	 "http://webagencydesign.org/movie_img/gandhi.jpg",
 	 	 "https://www.youtube.com/watch?v=6oWqlb_TlLQ")
 
+'''
+Create the array "movies" & assign the newly created movie instances to that array. Call the fresh_tomatoes.py 
+function "open_movies_page" on array "movies".
+'''
 movies = [hunger_games, frozen, tiger_dragon, lawrence, ironman, gandhi]
 fresh_tomatoes.open_movies_page(movies)
